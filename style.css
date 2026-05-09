@@ -58,8 +58,7 @@ ul {
 }
 
 li {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
   opacity: 0.6;
 }
 
@@ -166,7 +165,7 @@ li {
 
 .lower li {
   font-size: 1.6rem;
-  color: var(--teal-100);
+  color: var(--white);
   font-weight: var(--font-weight-regular);
 }
 
