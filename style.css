@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Karla";
+  src:
+    url("./fonts/Karla-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Karla-VariableFont_wght.woff") format("woff");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src:
+    url("./fonts/Karla-Italic-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Karla-Italic-VariableFont_wght.woff") format("woff");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* Primary */
+  --white: hsla(0, 0%, 100%, 1);
+  --teal-300: hsl(174, 47%, 53%);
+  --teal-500: hsl(174, 60%, 41%);
+  --green-400: hsl(67, 69%, 52%);
+
+  /* Neutral */
+  --teal-100: hsl(204, 43%, 93%);
+  --gray-500: hsl(201, 35%, 92%);
+
+  /* Typography */
+  --font-family-primary: "Karla", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.main {
+  min-height: 100dvh;
+  background-color: var(--gray-500);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.upper,
+.middle,
+.lower {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.upper {
+  background-color: var(--white);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--teal-500);
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  color: var(--green-400);
+  font-weight: var(--font-weight-bold);
+}
+
+.discription {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  opacity: 0.4;
+}
+
+.middle {
+  background-color: var(--teal-500);
+  color: var(--teal-100);
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--green-400);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-medium);
+  border: none;
+  padding: 1rem;
+  width: 70%;
+  margin: auto;
+}
+
+.mid-title {
+  font-size: 1.8rem;
+  color: var(--Full-White);
+  opacity: 0.95;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: var(--Full-White);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 1.6rem;
+  color: var(--Full-White);
+  margin-left: 1rem;
+  opacity: 0.5;
+}
+
+.offer {
+  font-size: 1.6rem;
+  color: var(--Full-White);
+  margin-bottom: 2rem;
+}
+
+.lower {
+  background-color: var(--teal-300);
+  color: var(--teal-100);
+}
+
+.lower-title {
+  font-size: 2rem;
+}
+
+.lower li {
+  font-size: 1.6rem;
+  color: var(--teal-100);
+  font-weight: var(--font-weight-regular);
+}
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    min-width: 60rem;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .upper {
+    grid-column: 1 / 3;
+  }
+}
